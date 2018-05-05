@@ -8368,6 +8368,15 @@ body {
   margin-top: 0px;
 }
 
+/*.navbar-brand-name{
+  float: left;
+  padding: 18px 15px;
+  font-size: 18px;
+  line-height: 22px;
+  height: 40px;
+  margin-left: -15px;
+}*/
+
 /* Sticky footer styles */
 
 html {
@@ -8395,7 +8404,7 @@ body {
 }
 
 .footer .container p {
-  margin: 19px 0;
+  margin: 19px 15px 0;
   color: #c1c1c1;
 }
 
