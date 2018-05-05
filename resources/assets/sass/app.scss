@@ -48,8 +48,11 @@ body {
     }
   }
 }
-.brand-logo-name{
-  padding-top: 18px;
-  font-size: 18px;
-  margin-left:60px;
+/* User profile page */
+.users-show-page {
+  .user-info {
+    .thumbnail {
+      margin-bottom: 0px;
+    }
+  }
 }
