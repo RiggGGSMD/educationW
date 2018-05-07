@@ -9,6 +9,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('title', '实验室预约管理系统')-educationW</title>
+    <meta name="description" content="@yield('description', '实验室预约管理系统')" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
