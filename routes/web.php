@@ -32,6 +32,9 @@ Route::resource('topics', 'TopicsController', ['only' => ['index', 'create', 'st
 Route::resource('categories', 'CategoriesController', ['only' => ['show']]);
 //upload image for create topic
 Route::post('upload_image', 'TopicsController@uploadImage')->name('topics.upload_image');
-
+//topic:slug figure
 Route::get('topics/{topic}/{slug?}', 'TopicsController@show')->name('topics.show');
-Route::resource('replies', 'RepliesController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+//replies
+Route::resource('replies', 'RepliesController', ['only' => ['store', 'destroy']]);
+
+Route::resource('notifications', 'NotificationsController', ['only' => ['index']]);
