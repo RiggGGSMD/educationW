@@ -26,11 +26,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
-        if (app()->environment() == 'local' || app()->environment() == 'testing') {
-
-            $this->app->register(\Summerblue\Generator\GeneratorsServiceProvider::class);
-
+        if (app()->isLocal()) {
+            $this->app->register(\VIACreative\SudoSu\ServiceProvider::class);
         }
     }
 }
