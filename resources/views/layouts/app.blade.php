@@ -13,6 +13,8 @@
     <meta name="keyword" content="@yield('keyword', setting('seo_keyword', '实验交流，共同进步！'))" />
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/semantic-ui/2.2.13/semantic.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
     @yield('styles')
 </head>
 

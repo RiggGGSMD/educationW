@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Lab;
+
 
 class PagesController extends Controller
 {
-    public function root()
+    public function root(Lab $lab)
     {
-        return view('pages.root');
+        return view('pages.root',compact('lab'));
     }
     public function permissionDenied()
     {
