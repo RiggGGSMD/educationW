@@ -5,5 +5,16 @@
     <br><br>
     <span><b style="font-size: 15px">实验室位于: </b>{{array_column(DB::select('select lab_located from labs'),'lab_located')[0]}}</span>
     <hr>
-    {{array_column(DB::select('select * from appointments,users where appointments.user_id = users.id and lab_id = 1'),'name')[0]}}
+    <table style="float: left">
+    @foreach ($user as $users)
+            <tr><td>{{ $users->name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td></tr>
+
+    @endforeach
+    </table>
+    <table style="float: left">
+    @foreach ($appointment as $appointments)
+            <tr><td>{{ $appointments->appointment_time }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>{{ $appointments->appointment_end }}</td></tr>
+    @endforeach
+    </table>
 @stop
