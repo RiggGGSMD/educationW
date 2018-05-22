@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', '实验室预约管理系统')
 @section('content')
-    <div class="ui three column stackable grid link cards">
+    <div class="ui three column stackable grid link cards" style="margin-bottom: 21px">
         <div class="column">
             <div class="ui fluid card">
                 <a href="{{route('info')}}"><img src="https://dn-phphub.qbox.me/uploads/images/201709/10/4430/xlAZ6z2HsW.png" width="362px" height="300px" /></a>

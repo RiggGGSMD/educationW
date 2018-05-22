@@ -14,7 +14,6 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="https://cdn.bootcss.com/semantic-ui/2.2.13/semantic.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
     @yield('styles')
 </head>
 
@@ -40,6 +39,5 @@
 
 <!-- Scripts -->
 <script src="{{ asset('js/app.js') }}"></script>
-@yield('scripts')
 </body>
 </html>

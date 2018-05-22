@@ -8352,6 +8352,11 @@ button.close {
 
 /* universal */
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Hiragino Sans GB, "Hiragino Sans GB", Helvetica, "Microsoft YaHei", Arial,sans-serif;
 }
@@ -8403,7 +8408,7 @@ body {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
@@ -8417,7 +8422,7 @@ body {
 }
 
 .footer .container p {
-  margin: 19px 15px 0;
+  margin: 19px 0;
   color: #c1c1c1;
 }
 

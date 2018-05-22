@@ -42,6 +42,6 @@ Route::resource('notifications', 'NotificationsController', ['only' => ['index']
 Route::get('permission-denied', 'PagesController@permissionDenied')->name('permission-denied');
 
 Route::get('/info','AppointmentsController@info')->name('info');
-Route::get('/appointment','AppointmentsController@appoint')->name('appointment');
+Route::post('/appointment','AppointmentsController@appoint')->name('appointment');
 Route::get('/appointment_finish','AppointmentsController@show')->name('appointment_finish');
 

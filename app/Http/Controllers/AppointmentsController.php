@@ -27,7 +27,10 @@ class AppointmentsController extends Controller
         $end = Carbon::now()->toDateTimeString();
         $bool = DB::table('appointments')
             ->insert(['lab_id' => $lab_ids,'user_id'=>$user_ids,'appointment_time'=>$now,'appointment_end'=>$end,'created_at' => $now,'updated_at' => $now]);
-        return redirect()->route('appointment_finish')->with('message', '预约成功!');
+        if($bool)
+        {
+            return redirect()->route('appointment_finish')->with('message', '预约成功!');
+        }
     }
     public  function show()
     {

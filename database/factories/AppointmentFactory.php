@@ -5,11 +5,10 @@ use Carbon\Carbon;
 $factory->define(App\Models\Appointment::class, function (Faker $faker) {
 
     $now = Carbon::now()->toDateTimeString();
-    $time_start = $faker->dateTimeThisMonth($now);
-    $time_end = $faker->dateTimeThisMonth($time_start);
+    $end = Carbon::now()->addHour(6)->toDateTimeString();
     return [
-        'Appointment_time' => $time_start,
-        'Appointment_end' => $time_end,
+        'Appointment_time' => $now,
+        'Appointment_end' => $end,
         'created_at' => $now,
         'updated_at' => $now,
 
