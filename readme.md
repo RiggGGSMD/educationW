@@ -1,3 +1,3 @@
 <p>education_Web</p><br>
-<p>laravel</p><br>
-<p>MVC models</p>
+<p>just a simple website</p><br>
+<p>used to appointment lab on school</p>
